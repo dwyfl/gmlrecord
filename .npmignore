@@ -1,0 +1,11 @@
+/src
+/test
+/.vscode
+.eslintignore
+.eslintrc.json
+.gitignore
+.npmignore
+yarn.lock
+yarn-debug.log*
+yarn-error.log*
+settings.json

@@ -1,0 +1,40 @@
+{
+  "name": "gmlrecord",
+  "version": "1.0.0",
+  "description": "Library for recording GML data.",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rm -rf lib && rm -rf node_modules",
+    "test": "npx jest test",
+    "lint": "npx eslint .",
+    "build": "npx babel src --out-dir lib",
+    "develop": "npx babel --watch src --out-dir lib --source-maps inline",
+    "prepublishOnly:": "rm -rf lib && npm run build"
+  },
+  "author": "Gustav Peterz <gpeterz@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwyfl/gmlrecord.git"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-plugin-inline-import": "^2.0.6",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.8.0",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^21.2.1",
+    "regenerator-runtime": "^0.11.0"
+  }
+}
