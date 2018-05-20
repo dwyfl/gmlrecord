@@ -1,4 +1,4 @@
-# gmlrender
+# gmlrecord
 JavaScript library for recording GML data.
 
 ## Usage
